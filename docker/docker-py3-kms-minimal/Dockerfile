@@ -15,7 +15,7 @@ ENV LOGFILE STDOUT
 ENV LOGSIZE ""
 ENV WEBUI 0
 
-COPY docker/docker-py3-kms-minimal/requirements.txt /home/py-kms/requirements.txt
+COPY /docker/docker-py3-kms-minimal/requirements.txt /home/py-kms/requirements.txt
 RUN apk add --no-cache --update \
 bash \
   python3 \
